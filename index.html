@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="YZ — Cornell. Quantitative research and options risk: option valuation, integer proxy hedging, execution accounting and reproducible market research.">
+  <meta name="theme-color" content="#10151b">
+  <title>YZ | Quantitative Research &amp; Options Risk</title>
+  <link rel="icon" href="assets/yz.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#work">Skip to selected work</a>
+  <div class="page">
+    <header><a class="identity" href="./" aria-label="YZ home">YZ<span>Cornell</span></a><nav aria-label="Main"><a href="#work">Work</a><a href="#evidence">Evidence</a><a href="https://github.com/yz3639-gif">GitHub <span aria-hidden="true">↗</span></a></nav></header>
+    <main>
+      <section class="intro" aria-labelledby="heading">
+        <p class="eyebrow">INDEPENDENT RESEARCH / PYTHON</p>
+        <h1 id="heading">Quantitative Research<br><span>&amp; Options Risk</span></h1>
+        <p class="lead">Option valuation, whole-contract hedging and auditable trading research.<br class="desktop-break"> From an explicit assumption to a result you can inspect.</p>
+      </section>
+      <section id="work" class="work" aria-label="Selected work">
+        <article class="project flagship">
+          <div class="project-top"><span class="number">01</span><span class="status">Synthetic engineering demo</span></div>
+          <h2>WTI Options Desk</h2>
+          <p class="question">What remains at risk after a proxy hedge?</p>
+          <p class="capability">Option valuation, integer hedge tickets and scenario losses with explicit trading costs.</p>
+          <p class="proof"><strong>45</strong> stored cases <span>·</span> <strong>100</strong> stress scenarios</p>
+          <div class="links"><a class="primary" href="https://yz3639-gif.github.io/cushing-wti-research/options-desk/">Open desk <span aria-hidden="true">↗</span></a><a href="https://github.com/yz3639-gif/cushing-wti-research/tree/main/options_lab">Code</a></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span class="number">02</span><span class="status">Historical development evaluation</span></div>
+          <h2>NVDA Research Lab</h2>
+          <p class="question">Does a backtest survive different execution assumptions?</p>
+          <p class="capability">Chronological model comparisons, reconciled trade accounting and cost sensitivity.</p>
+          <p class="proof"><strong>18</strong> walk-forward folds <span>·</span> <strong>1× / 2× / 4×</strong> costs</p>
+          <div class="links"><a class="primary" href="https://github.com/yz3639-gif/Nvda_Quant_Model/blob/main/research/results/frozen_20260918/research_report.md">Read findings <span aria-hidden="true">↗</span></a><a href="https://github.com/yz3639-gif/Nvda_Quant_Model/tree/main/nvda_quant_model/research">Code</a></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span class="number">03</span><span class="status">Historical public-data research</span></div>
+          <h2>Cushing / WTI Research</h2>
+          <p class="question">When does inventory explain the shape of the WTI curve?</p>
+          <p class="capability">Publication-aligned data, seasonal controls and tests of stability across years.</p>
+          <p class="proof"><strong>481</strong> matched observations <span>·</span> <strong>2015–24</strong></p>
+          <div class="links"><a class="primary" href="https://yz3639-gif.github.io/cushing-wti-research/research_memo.pdf">Read memo <span aria-hidden="true">↗</span></a><a href="https://github.com/yz3639-gif/cushing-wti-research">Code</a></div>
+        </article>
+      </section>
+      <section id="evidence" class="evidence" aria-labelledby="evidence-heading">
+        <div class="section-heading"><h2 id="evidence-heading">Inspect the evidence</h2><p>Results, assumptions and implementation travel together.</p></div>
+        <article class="evidence-row">
+          <div><span class="eyebrow">OPTIONS / ENGINEERING</span><h3>A hedge is a set of trade-offs.</h3><p>The desk connects volatility inputs to indicative quotes, whole-contract hedge tickets and remaining scenario risk. Inspect the complete Python workflow and the evidence behind the public walkthrough.</p><p class="boundary">Synthetic inputs and precomputed cases. Scenario losses are not historical returns or loss bounds.</p><div class="text-links"><a href="https://yz3639-gif.github.io/cushing-wti-research/options-desk/">Interactive desk ↗</a><a href="https://github.com/yz3639-gif/cushing-wti-research/blob/main/options_lab/VALIDATION.md">Validation &amp; limits ↗</a></div></div>
+          <a class="evidence-image desk-image" href="https://yz3639-gif.github.io/cushing-wti-research/options-desk/" aria-label="Open the WTI Options Desk"><img src="assets/options-desk.jpg" alt="Actual WTI Options Desk interface with volatility controls and hedge-risk results" width="1265" height="1933" loading="lazy"></a>
+        </article>
+        <article class="evidence-row">
+          <div><span class="eyebrow">EQUITIES / EXECUTION</span><h3>Keep the uncomfortable results.</h3><p>Compare saved signals under different execution and stop assumptions, then inspect all 17 strategy and control variants. Negative outcomes, risk halts and cost stress remain visible.</p><p class="boundary">Main input data ends May 22, 2026. Historical development evaluation; no untouched holdout or live performance record claimed.</p><div class="text-links"><a href="https://github.com/yz3639-gif/Nvda_Quant_Model/blob/main/research/TECHNICAL_BRIEF.md">Technical walkthrough ↗</a><a href="https://github.com/yz3639-gif/Nvda_Quant_Model/blob/main/research/RUNBOOK.md">Reproduction guide ↗</a></div></div>
+          <a class="evidence-image" href="assets/nvda-evidence.png" aria-label="View the complete NVDA execution and strategy evidence figure"><img src="assets/nvda-evidence.png" alt="Saved NVDA execution replay and results of all 17 strategy and control variants" loading="lazy"></a>
+        </article>
+        <article class="evidence-row">
+          <div><span class="eyebrow">COMMODITIES / RESEARCH</span><h3>Test where the relationship breaks.</h3><p>Cushing inventories relate strongly to WTI spreads in pooled history. Year and season controls, sensitivity checks and dated case studies show why that is not enough to establish a trading rule.</p><p class="boundary">EIA public-data sample: January 2015–April 2024. Delivery-rank quotes are not fixed tradable contract pairs.</p><div class="text-links"><a href="https://yz3639-gif.github.io/cushing-wti-research/research/">Explore the report ↗</a><a href="https://github.com/yz3639-gif/cushing-wti-research/blob/main/docs/MECHANISM_EXTENSION.md">Methods &amp; sensitivities ↗</a></div></div>
+          <a class="evidence-image" href="assets/cushing-evidence.png" aria-label="View the Cushing inventory and WTI spread research figure"><img src="assets/cushing-evidence.png" alt="Historical seasonal Cushing inventory anomalies and their relationship to preceding WTI spreads" width="1571" height="524" loading="lazy"></a>
+        </article>
+      </section>
+      <section class="about" aria-label="About YZ"><h2>YZ <span>/ Cornell</span></h2><p>I build research tools that make assumptions, costs and failure modes inspectable. My work spans options risk, execution modeling and commodity-market research.</p><a href="https://github.com/yz3639-gif">View repositories ↗</a></section>
+    </main>
+    <footer><span>YZ · Independent quantitative research</span><span>Public research &amp; synthetic engineering demonstrations</span></footer>
+  </div>
+</body>
+</html>
