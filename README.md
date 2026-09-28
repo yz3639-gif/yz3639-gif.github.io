@@ -8,4 +8,4 @@ A static portfolio linking three inspectable projects: the WTI Options Desk, NVD
 
 Run locally with `python3 -m http.server 8765`, then open `http://localhost:8765`.
 
-The figures and interface image come from the linked public research repositories. See `ASSETS.md` for their sources. GitHub Pages serves this repository's `main` branch at the root; `.nojekyll` preserves the static files.
+The figures come from the linked public research repositories; the options cost chart is calculated directly from a saved synthetic case. See `ASSETS.md` for sources and the exact calculation. GitHub Pages serves this repository's `main` branch at the root; `.nojekyll` preserves the static files.
